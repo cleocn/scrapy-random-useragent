@@ -39,7 +39,7 @@ setup(
 
     author=author,
     author_email=email,
-    url='https://github.com/cnu/scrapy-random-useragent',
+    url='https://github.com/cleocn/scrapy-random-useragent',
 
     license=license,
 
