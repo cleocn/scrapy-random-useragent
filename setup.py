@@ -12,7 +12,7 @@ with codecs.open('README.rst', encoding='utf-8') as f:
 
 
 # Open the package file so we can read the meta data.
-with codecs.open('random_useragent.py', encoding='utf-8') as f:
+with codecs.open('scrapy_random_ua.py', encoding='utf-8') as f:
     package_file = f.read()
 
 
