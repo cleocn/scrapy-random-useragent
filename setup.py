@@ -31,7 +31,7 @@ license = get_package_meta('license')
 
 
 setup(
-    name='scrapy-random-useragent',
+    name='scrapy_random_ua',
     version=version,
 
     description='Scrapy Middleware to set a random User-Agent for every Request.',
@@ -43,9 +43,9 @@ setup(
 
     license=license,
 
-    py_modules=['random_useragent'],
+    py_modules=['scrapy_random_ua'],
     platforms=['Any'],
-
+    install_requires = ["random_useragent"],
     keywords="scrapy random user-agent ",
     classifiers=[
         'Development Status :: 4 - Beta',
