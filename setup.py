@@ -45,7 +45,7 @@ setup(
 
     py_modules=['scrapy_random_ua'],
     platforms=['Any'],
-    install_requires = ["random_useragent"],
+    install_requires = ["fake-useragent"],
     keywords="scrapy random user-agent ",
     classifiers=[
         'Development Status :: 4 - Beta',
