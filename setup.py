@@ -31,7 +31,7 @@ license = get_package_meta('license')
 
 
 setup(
-    name='scrapy_random_ua',
+    name='scrapy-random-ua',
     version=version,
 
     description='Scrapy Middleware to set a random User-Agent for every Request.',

@@ -7,7 +7,7 @@ user-agents and sets a random one for each request.
 """
 
 import random
-import random_useragent
+from fake_useragent import UserAgent
 from scrapy import signals
 from scrapy.downloadermiddlewares.useragent import UserAgentMiddleware
 
@@ -25,7 +25,7 @@ class RandomUserAgentMiddleware(UserAgentMiddleware):
 
     def __init__(self, settings, user_agent='Scrapy'):
         super(RandomUserAgentMiddleware, self).__init__()
-        
+        self.ua = UserAgent()
 
     @classmethod
     def from_crawler(cls, crawler):
@@ -35,4 +35,4 @@ class RandomUserAgentMiddleware(UserAgentMiddleware):
         return obj
 
     def process_request(self, request, spider):
-        request.headers.setdefault('User-Agent', random_useragent.random_useragent())
+        request.headers.setdefault('User-Agent', self.ua.random )
